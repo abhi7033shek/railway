@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+<head>
+<title>Forms</title>
+<style>
+input
+{
+background-color:lightgreen;
+}
+input[type=text],input[type=password],input[type=email]
+{
+padding:5px;
+border-style:none;
+border-radius:6px;
+outline:none;
+}
+input[type=submit],input[type=reset]
+{
+background-color:darkgreen;
+padding:6px;
+color:white;
+cursor:pointer;
+}
+input[type=submit]:hover,input[type=reset]:hover
+{
+background-color:lightgreen;
+}
+</style>
+</head>
+<body>
+<h2>HTML forms</h2>
+<form action="thanks.html" target="_blank" method="post">
+<label for="user">Username:</label>
+<input type="text" id="user" name="username" value="Rahul" size="30">
+<br>
+<br>
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="password" placeholder="type your password here" required maxlength="7" minlength="5">
+<br><br>
+<label for="mail">Email:</label>
+<input type="email" id="mail" name="email">
+<br><br>
+<input type="submit" value="Sign up">
+<input type="reset" value="reset now">
+</form>
+</body>
+</html>

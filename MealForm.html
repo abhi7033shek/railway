@@ -1,0 +1,82 @@
+<! Doctype html>
+<html>
+    <head>
+    <link href="#" rel="stylesheet"></head>
+      <style>
+input{
+    text-align: center;        
+        }
+input:after 
+{
+    content: ' \2195';
+    
+}
+*{
+    border-color: black;
+    
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<section style="height: auto;width: auto">
+    <div class="sidenav" style="align-content: center;text-align: center;background-color: bisque;border-color: black;background-repeat: no-repeat;background-position: center;border:2px solid black;"><br>
+    <div style="align-content: center; text-align: center;"><img src="pictures/Book%20Meals.png" width="250px" height="50px"></div><br><br>
+    <form action="thanks.html" target="_blank" method="post" >
+    <input type="text" placeholder="Enter Train Name" size="30"><br><br>
+        <input type="text" placeholder="Enter PNR No." size="30"><br><br>
+         <input type="text" placeholder="Enter boarding date"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')" style="width: 250px"> <br> <br>
+
+<select name="plan" id="plan" style="width: 250px;background-color: bisque">
+        
+        <option value="All" selected>All classes</option>
+        <option value="AC1">AC 1st Class (1A)</option>
+        <option value="AC2">AC 2 tier (2A)</option>
+        <option value="AC3">AC 3 tier (3A)</option>
+        <option value="sleeper">Sleeper</option>
+        <option value="general">General</option>
+    </select><br><br>
+        <p style="color: indigo">Please select the type of food you prefer</p>
+        <input type="radio" name="type" id="veg"><label for="veg">Vegetarian Food</label>
+        <input type="radio" name="type" id="nveg"><label for="nveg">Non-Vegetarian Food</label>
+        <input type="radio" name="type" id="both"><label for="both">Both</label><br><br>
+
+        <button class="button" name="subject" type="submit" value="HTML"><span>Search</span></button>
+        </form></div></section></html>
